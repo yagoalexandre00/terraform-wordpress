@@ -1,2 +1,3 @@
 do_token = ""
 wps_user = ""
+ssh_public_key_path = ""

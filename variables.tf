@@ -3,6 +3,6 @@ variable "do_token" {
 }
 
 variable "ssh_public_key_path" {
-  type = string
+  type        = string
   description = "SSH public key path in your local machine"
 }
