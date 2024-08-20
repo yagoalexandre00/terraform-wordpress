@@ -15,6 +15,6 @@ output "database_user" {
 }
 
 output "database_pass" {
-  value = digitalocean_database_cluster.mysql-wps.password
+  value = digitalocean_database_user.mysql-wps-user.password
   sensitive = true
 }

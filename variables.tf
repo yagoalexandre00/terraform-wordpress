@@ -10,7 +10,7 @@ variable "do_region" {
 
 variable "wps_user" {
   type    = string
-  default = "nyc1"
+  default = "wordpress"
 }
 
 variable "wps_vm_count" {
