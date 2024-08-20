@@ -1,23 +1,8 @@
 variable "do_token" {
-  type     = string
-  nullable = false
+  type = string
 }
 
-variable "do_region" {
-  type    = string
-  default = "nyc1"
-}
-
-variable "wps_user" {
-  type    = string
-  default = "wordpress"
-}
-
-variable "wps_vm_count" {
-  default = 2
-  type    = number
-  validation {
-    condition = var.wps_vm_count >= 1
-    error_message = "Quantity of VMs is below 1..."
-  }
+variable "ssh_public_key_path" {
+  type = string
+  description = "SSH public key path in your local machine"
 }

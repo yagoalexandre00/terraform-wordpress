@@ -1,20 +1,20 @@
-output "loadbalancer_ipv4" {
-  value = digitalocean_loadbalancer.wps-lab-loadbalancer.ip
+output "wp_stack_loadbalancer_ipv4" {
+  value = module.wp_solution.loadbalancer_ipv4
 }
 
-output "droplet_ipv4" {
-  value = digitalocean_droplet.wps-droplet[*].ipv4_address
+output "wp_stack_droplet_ipv4" {
+  value = module.wp_solution.droplet_ipv4
 }
 
-output "database_cluster_ipv4" {
-  value = digitalocean_database_cluster.mysql-wps.host
+output "wp_stack_database_cluster_ipv4" {
+  value = module.wp_solution.database_cluster_ipv4
 }
 
-output "database_user" {
-  value = digitalocean_database_user.mysql-wps-user.name
+output "wp_stack_database_user" {
+  value = module.wp_solution.database_user
 }
 
-output "database_pass" {
-  value = digitalocean_database_user.mysql-wps-user.password
+output "wp_stack_database_pass" {
+  value     = module.wp_solution.database_pass
   sensitive = true
 }
